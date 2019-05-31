@@ -4,6 +4,15 @@ body {
   font-family: 'Gugi', cursive;
 }
 
+.homeTitle {
+  text-align: center;
+  padding-top: 100px;
+  color: pink;
+  letter-spacing: 5px;
+  font-size: 70px;
+  text-transform: uppercase;
+}
+
 .welcome h1 {
   padding-top: 100px;
   color: pink;
@@ -15,7 +24,7 @@ body {
 .welcome h4 {
   color: pink;
   letter-spacing: 3px;
-  font-size: 20px;
+  font-size: 30px;
   text-align: center;
 }
 
