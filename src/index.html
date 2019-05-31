@@ -2,11 +2,57 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Project Name</title>
+  <link href="https://fonts.googleapis.com/css?family=Gugi" rel="stylesheet">
+  <title>Galactic Age</title>
 </head>
 <body>
   <div class="container">
-    <h3>Stuff goes here</h3>
+
+    <div class="welcome">
+      <h1>Galactic Age Calculator</h1>
+      <h4>Enter in a birthday and I will calculate your age in solar years</h4>
+    </div>
+
+    <div class="solarCalc">
+      <form id="solarCalc">
+        <label for="date">Enter your date of birth:</label>
+        <br>
+        <input id="date" type="date" required>
+        <br>
+        <br>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+    <div class = "row">
+      <div class="well mercury col-sm">
+        <h3>Mercury</h3>
+        <h4><span id="mercuryAge"></span></h4>
+        <h4><span id="mercuryExpectancy"></span></h4>
+      </div>
+
+      <div class="well venus col-sm">
+        <h3>Venus</h3>
+        <h4><span id="venusAge"></span></h4>
+        <h4><span id="venusExpectancy"></span></h4>
+      </div>
+
+      <div class="well mercury col-sm">
+        <h3>Mars</h3>
+        <h4><span id="marsAge"></span></h4>
+        <h4><span id="marsExpectancy"></span></h4>
+      </div>
+
+      <div class="well mercury col-sm">
+        <h3>Jupiter</h3>
+        <h4><span id="jupiterAge"></span></h4>
+        <h4><span id="jupiterExpectancy"></span></h4>
+      </div>
+    </div>
+
+    <h4><span id="yearsToLive">You have these awesome years yet to live, live fully!</span><span id="overlived">You have overlived these years!</span></h4>
+
+
   </div>
 </body>
 </html>
