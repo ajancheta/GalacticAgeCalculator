@@ -6,6 +6,8 @@ import SolarAgeCalculator from './../src/solar-year';
 
 $(document).ready(function(){
   $("#solarCalc").submit(function(event){
+    // $("#overlived").fadeToggle();
+    $("#yearsToLive").fadeToggle();
     event.preventDefault();
 
     let currentDate = new Date();
@@ -23,8 +25,8 @@ $(document).ready(function(){
     $("#jupiterExpectancy").text(userInput.lifeExpJupiter());
 
     if(userInput.lifeExpMercury() <= 0 || userInput.lifeExpVenus() <= 0 || userInput.lifeExpMars() <= 0 || userInput.lifeExpJupiter() <= 0) {
-      $("#yearsPast").show();
-      $("#yearsLeft").hide();
+      $("#overlived").show();
+      $("#yearsToLive").hide();
     }
   });
 });
