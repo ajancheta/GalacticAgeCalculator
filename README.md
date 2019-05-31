@@ -10,9 +10,9 @@
 ## Specs
 | Behavior | Input | Output |
 | ------------- |:-------------:| -----:|
-| User will input date of birth | 07/27/1994 | 24 |
-| User will input date of birth and application will multiply by the year of selected planet | 07/27/1994 | Age of 6.00 in Mercury years |
-| Based on the user date of birth input, application will calculate the life expectancy on each planet | 07/27/1994 | 18 years left |
+| User will input date of birth | 07/21/1994 | 24 |
+| User will input date of birth and application will multiply by the year of selected planet | 07/21/1994 | Age of 6.00 in Mercury years |
+| Based on the user date of birth input, application will calculate the life expectancy on each planet | 07/21/1994 | 18 years on Mars |
 
 
 
