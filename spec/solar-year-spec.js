@@ -1,4 +1,4 @@
-import SolarAgeCalculator from './../src/solar-year'
+import SolarAgeCalculator from './../src/solar-year';
 
 describe('Solar Age Calculator', function () {
   it('should test that the calculated Mercury age is correct', function () {
