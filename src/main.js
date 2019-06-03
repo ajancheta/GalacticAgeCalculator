@@ -5,10 +5,9 @@ import './styles.css';
 import SolarAgeCalculator from './../src/solar-year';
 
 $(document).ready(function(){
-
   $(".initialize").click(function(event){
     event.preventDefault();
-    $("#solarCalc").fadeToggle();
+    $(".solarCalc").fadeToggle();
     $(".result").fadeToggle();
     $(".initialize").hide();
 
@@ -16,6 +15,7 @@ $(document).ready(function(){
 
   $("#solarCalc").submit(function(event){
     event.preventDefault();
+    $(".initialize").hide();
 
     let currentDate = new Date();
     let age = parseInt(currentDate.getFullYear()) - parseInt(($('#date').val()).slice(0, 4));
@@ -31,14 +31,14 @@ $(document).ready(function(){
     $("#marsExpectancy").text(userInput.lifeExpMars());
     $("#jupiterExpectancy").text(userInput.lifeExpJupiter());
 
-    // if(userInput.lifeExpMercury() <= 0 || userInput.lifeExpVenus() <= 0 || userInput.lifeExpMars() <= 0 || userInput.lifeExpJupiter() <= 0) {
-    //   $("#overlived").show();
-    //   $("#yearsToLive").hide();
-    // }
-    //
-    // if(userInput.lifeExpMercury() >= 0 || userInput.lifeExpVenus() >= 0 || userInput.lifeExpMars() >= 0 || userInput.lifeExpJupiter() >= 0) {
-    //   $("#overlived").hide();
-    //   $("#yearsToLive").show();
-    // }
+    if(userInput.lifeExpMercury() <= 0 || userInput.lifeExpVenus() <= 0 || userInput.lifeExpMars() <= 0 || userInput.lifeExpJupiter() <= 0) {
+      $("#overlived").fadeToggle();
+      $("#yearsToLive").hide();
+    }
+
+    if(userInput.lifeExpMercury() >= 0 || userInput.lifeExpVenus() >= 0 || userInput.lifeExpMars() >= 0 || userInput.lifeExpJupiter() >= 0) {
+      $("#overlived").hide();
+      $("#yearsToLive").fadeToggle();
+    }
   });
 });
