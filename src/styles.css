@@ -86,3 +86,18 @@ h2 {
   letter-spacing: 5px;
   display: none;
 }
+
+.flexBox {
+  display: flex;
+  height: 300px;
+}
+
+.item {
+  height: 150px;
+  margin-top: 10px;
+}
+
+#spaceship{
+  padding: 5px;
+  display: none;
+}
