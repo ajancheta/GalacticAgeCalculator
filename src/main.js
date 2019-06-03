@@ -33,12 +33,14 @@ $(document).ready(function(){
 
     if(userInput.lifeExpMercury() <= 0 || userInput.lifeExpVenus() <= 0 || userInput.lifeExpMars() <= 0 || userInput.lifeExpJupiter() <= 0) {
       $("#overlived").fadeToggle();
+      $("#spaceship").fadeToggle();
       $("#yearsToLive").hide();
     }
 
     if(userInput.lifeExpMercury() >= 0 || userInput.lifeExpVenus() >= 0 || userInput.lifeExpMars() >= 0 || userInput.lifeExpJupiter() >= 0) {
-      $("#overlived").hide();
       $("#yearsToLive").fadeToggle();
+      $("#spaceship").fadeToggle();
+      $("#overlived").hide();
     }
   });
 });
