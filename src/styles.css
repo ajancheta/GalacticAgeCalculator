@@ -2,30 +2,39 @@ body {
   background-color: #000000;
   color: #ffffff;
   font-family: 'Gugi', cursive;
+  padding: 30px;
+}
+
+.initialize {
+  text-align: center;
+  background-image: url("https://media.giphy.com/media/10MHY1ZltdUjew/giphy.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* padding: 90px; */
+  padding-top: 100px;
+  padding-bottom: 105px;
+  margin-right: 20%;
+  margin-left: 20%;
+  border-radius: 68%;
+  border: 10px solid #000000;
+  margin-top: 2%;
+  text-align: center;
+  letter-spacing: 3px;
 }
 
 .homeTitle {
   text-align: center;
   padding-top: 100px;
-  color: pink;
+  color: #7eed23;
   letter-spacing: 5px;
   font-size: 70px;
   text-transform: uppercase;
 }
 
-.welcome h1 {
-  padding-top: 100px;
-  color: pink;
-  letter-spacing: 5px;
-  font-size: 70px;
-  text-align: center;
-}
-
-.welcome h4 {
-  color: pink;
+h2 {
+  color: #7eed23;
   letter-spacing: 3px;
   font-size: 30px;
-  text-align: center;
 }
 
 .solarCalc {
@@ -35,6 +44,17 @@ body {
   margin-right: 20%;
   text-align: center;
   margin-top: 20px;
+  display: none;
+}
+
+.inputBirth {
+  color: #7eed23;
+  letter-spacing: 3px;
+  font-size: 30px;
+}
+
+.result {
+  display: none;
 }
 
 .well {
@@ -43,4 +63,26 @@ body {
   text-align: center;
   margin-top: 20px;
   margin-right: 20px;
+}
+
+#yearsToLive {
+  text-align: center;
+  padding-top: 70px;
+  color: #7eed23;
+  letter-spacing: 5px;
+  font-size: 50px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  display: none;
+}
+
+#overlived {
+  text-align: center;
+  padding-top: 70px;
+  color: #7eed23;
+  letter-spacing: 5px;
+  font-size: 50px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  display: none;
 }
